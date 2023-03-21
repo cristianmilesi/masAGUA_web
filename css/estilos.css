@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("/assets/fonts/OpenSans/OPENSANS-LIGHT.TTF");
+}
+
+@font-face {
+    font-family: "Gotham Pro Bold" ;
+    src: url("/assets/fonts/GothamPro/GOTHAMPRO-BOLD.TTF");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Open Sans Light";
+}
+
+
+
+.principal{
+    background-image: url(/assets/img/Background2.png);
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encabezado{
+    height: 30vh;    
+}
+
+.título{
+    font-family: "Gotham Pro Bold";
+    font-size: 1.5rem;
+    color: #00758d;
+    text-align: center;
+}
+
+.logo{
+    width: 30%;
+    margin: 80px auto;
+    justify-content: center;
+}
+
+.texto{
+    width: 50%;
+    margin: 0px auto;
+    text-align: justify;
+    justify-content: center ;
+}
+/*colores
+.background{
+    color: #42a7c6;
+    color: #00758d;
+    color: #38d430;
+}
+*/
+

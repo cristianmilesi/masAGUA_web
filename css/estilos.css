@@ -18,40 +18,141 @@ font-family: "Open Sans Light";
 
 
 .principal{
-    background-image: url(/assets/img/Background2.png);
-    background-position:initial;
+    background: rgb(0,117,141);
+    background: linear-gradient(148deg, rgba(0,117,141,1) 0%, rgba(66,167,198,0.364670868347339) 25%, rgba(238,242,244,0.7344187675070029) 50%, rgba(66,167,198,0.25262605042016806) 75%, rgba(56,212,48,0.7624299719887955) 100%);
+    /*background-image: url(/assets/img/Background2.png);
+    background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .encabezado{
-    height: 30vh;    
+    height: 25vh;    
+}
+
+.aviso{
+    font-family:"Gotham Pro Bold";
+    font-size: 3rem;
+    color: #1d1d1d;
+    text-align: center;
+    opacity: 70%;
 }
 
 .título{
-    font-family: "Gotham Pro Bold";
+    font-family:"Gotham Pro Bold";
     font-size: 1.5rem;
     color: #00758d;
     text-align: center;
 }
 
 .logo{
-    width: 30%;
-    margin: 80px auto;
+    width: 90%;
+    margin: 50px auto;
     justify-content: center;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to {opacity: 1;}
 }
 
 .texto{
-    width: 50%;
+    font-size: 1.25rem;
+    width: 90%;
     margin: 0px auto;
     text-align: justify;
     justify-content: center ;
 }
+
+/*Sección Contacto*/ 
+/*.link_contacto{
+    font-size: 2em;
+    color: #00758d;
+    display: inline-block;
+    margin: 5px; 
+}
+*/
+.divcontacto{
+    transition: 1s;
+}
+.divcontacto:hover{
+    transform: scale(1.1);
+}
+
+.iconoRedes{
+    font-size: 1.25em;
+    color: #00758d;
+    display: inline-block;
+    margin: 5px;
+    align-items: center;
+}
+
+.textoRedes{
+  text-decoration: none !important;
+  font-size: 1em;
+  color: #323232;
+  margin: 5px; 
+  display: flex;
+  align-items: center;
+  
+}
+
+.Footer{
+    height: 25vh;
+    align-self: flex-end;
+}
+
+
+@media screen and (min-width: 769px) {
+    .principal{
+        /*background-image: url(/assets/img/Background2.png);
+        background-position:initial;*/
+    }
+    
+    .título{
+        font-size: 2rem;
+    }
+
+    .logo{
+        width: 50%;
+        margin: 75px auto;
+        justify-content: center;
+    }
+
+    .texto{
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    .iconoRedes{
+        font-size: 1em;
+    }
+    
+    .textoRedes{
+      text-decoration: none !important;
+      font-size: 0.8em;
+            
+    }
+}
+
+
+
 /*colores
 .background{
-    color: #42a7c6;
-    color: #00758d;
-    color: #38d430;
+    color: #42a7c6; celeste
+    color: #00758d; azul
+    color: #38d430; verde
 }
 */
 
+/*
+background: rgb(0,117,141);
+background: linear-gradient(148deg, rgba(0,117,141,1) 2%, rgba(66,167,198,0.364670868347339) 32%, rgba(66,167,198,0.25262605042016806) 70%, rgba(56,212,48,0.7624299719887955) 100%);
+*/
+
+/*background-image: linear-gradient(to right bottom, #00758d, #43889c, #689aaa, #89aeba, #a9c1c9, #a1cbd5, #97d5de, #8cdfe5, #44e1d5, #00e0b1, #00dc7c, #38d430);*/
